@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UAV Web Dev Day 1</title>
+  </head>
+  <body>
+    <div>
+      <h1>Most Visited Websites</h1>
+      <!-- Below is the code of a simple table representing the most visited Websites -->
+      <table>
+        <caption>
+          The most visited websites and their traffic
+        </caption>
+        <!-- thead simply tells us something is header -->
+        <!-- scope is not required here, it tells the assistive techs that this is a header to a row (research what that is? LOL) 
+            colspan simply defines the width of column header, tweak with it, make it 2 or 3 then see the results :)
+        -->
+        <thead>
+          <th scope="col" colspan="1">S. No.</th>
+          <th scope="col" colspan="1">Websites</th>
+          <th scope="col" colspan="1">Traffic (billion / month)</th>
+        </thead>
+
+        <tr>
+          <td>1</td>
+          <td><a href="https://www.google.com">Google</a></td>
+          <td>86.9</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td><a href="https://www.youtube.com">Youtube</a></td>
+          <td>86.9</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td><a href="https://www.facebook.com">Facebook</a></td>
+          <td>86.9</td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td><a href="https://www.wikipedia.com">Wikipedia</a></td>
+          <td>86.9</td>
+        </tr>
+
+        <tr>
+          <td>5</td>
+          <td><a href="https://www.yahoo.com">Yahoo</a></td>
+          <td>86.9</td>
+        </tr>
+
+        <tr>
+          <td>6</td>
+          <td><a href="https://www.amazon.com">Amazon</a></td>
+          <td>86.9</td>
+        </tr>
+      </table>
+    </div>
+
+    <hr />
+
+    <div>
+        <!-- action basically defines where we want to submit our form -->
+        <!-- if in doubt use MDN and google -->
+      <h1>Hijacking the Google Search Engine!!!</h1>
+      <form action="https://www.google.com/search">
+        <p>
+          <label for="query">Enter Your Search Query</label>
+          <input type="text" id="query" name="q" placeholder="Enter Your Search Query">
+        </p>
+        <br />
+        <button type="submit">Search Google for this</button>
+      </form>
+    </div>
+  </body>
+</html>
